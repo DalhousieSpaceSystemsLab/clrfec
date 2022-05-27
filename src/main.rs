@@ -1,12 +1,8 @@
 use rand::Rng;
-use std::env;
-use std::fs::File;
-use std::io::prelude::*;
-use std::io::BufReader;
-use std::io::BufWriter;
-use std::io::Read;
-use std::ops::Deref;
-use std::process::exit;
+use std::{
+    env, fs::File, io::prelude::*, io::BufReader, io::BufWriter, io::Read, ops::Deref,
+    process::exit,
+};
 
 use reed_solomon::Buffer;
 use reed_solomon::Decoder;
